@@ -122,3 +122,16 @@ direction (darker/more devotional register) and over re-rolling.
   (₱110–₱190), not real quoted prices.
 - "Add-Ons & Customizations" intentionally has no photos and renders as a
   compact list — they're modifiers, not products.
+- **Menu photos sit on a cream mat inside their frame** (`bg-paper-card`
+  padding inside the border, like a matted print). This is load-bearing:
+  the Menu section's ground is dark walnut, and photos with dark or brown
+  backgrounds of their own dissolved straight into it. Don't remove the
+  mat — it's what guarantees every photo has an edge regardless of its
+  own background.
+- Menu photos were re-sourced to favour **light backgrounds** for the
+  same reason. Three keep darker backgrounds on purpose (café latte,
+  basque cheesecake, iced sea salt matcha) because their subjects are
+  bright with strong internal contrast. Making all 17 pure-white was
+  rejected deliberately — a uniform white-background set reads as a
+  sterile product catalogue, which is the Pickup Coffee look this page
+  positions against.

@@ -10,13 +10,18 @@ export function MenuItemCard({ item, className = '' }: Props) {
   return (
     <li className={`group ${className}`}>
       {item.image && (
-        <div className="overflow-hidden border-4 border-[var(--tone-frame)]">
-          <img
-            src={item.image}
-            alt={item.name}
-            loading="lazy"
-            className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-          />
+        // Cream mat inside the frame, like a matted print. Several of the
+        // photos have dark or brown backgrounds of their own and blended
+        // straight into the walnut ground without it.
+        <div className="border-4 border-[var(--tone-frame)] bg-paper-card p-2.5">
+          <div className="overflow-hidden">
+            <img
+              src={item.image}
+              alt={item.name}
+              loading="lazy"
+              className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+          </div>
         </div>
       )}
       <div className="mt-4">
