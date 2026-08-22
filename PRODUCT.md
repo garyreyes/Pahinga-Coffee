@@ -60,8 +60,8 @@ being planned separately (see docs/PRD.md's scope note).
   fictional business, and faking working links was explicitly rejected
   as looking "broken" if inert, so they stay clearly decorative rather
   than styled as clickable buttons
-- Location is fictional and generic (Katipunan Ave., Quezon City area)
-  — must not resolve to a real occupied address
+- Location is fictional and generic (Taft Avenue, Manila area, near
+  De La Salle University) — must not resolve to a real occupied address
 - No before/after comparison — not applicable, this is not a real
   business's existing site being replaced
 
