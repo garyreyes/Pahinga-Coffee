@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+/*
+  University Reading Room direction tokens — see PROJECT_FACTS.md.
+  Fixed aesthetic, not adaptive to system light/dark preference.
+  Brass is the one accent, reserved for active/focused elements only —
+  never a decorative scatter.
+*/
+@theme {
+  --color-paper: #e4d9c0;
+  --color-paper-card: #efe6d2;
+  --color-ink: #2b2018;
+  --color-ink-muted: #5b4a3a;
+  --color-walnut: #3b2a1e;
+  --color-walnut-light: #5c4430;
+  --color-brass: #b8863b;
+  --color-brass-glow: #d9a752;
+
+  --font-display: "Vollkorn", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+

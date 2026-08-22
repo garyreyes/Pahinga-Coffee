@@ -70,3 +70,12 @@ Manila small businesses. See `docs/PRD.md`, `PRODUCT.md`, and
   Code plugin cache, which isn't available on the GitHub Actions runner.
   A clean local pre-push run is the only signal for that check; CI does
   not re-verify it.
+- The detector's HTML/CSS parser dependencies (`htmlparser2`,
+  `css-select`, `css-tree`, `domutils`) are installed inside the
+  Impeccable plugin's own directory
+  (`~/.claude/plugins/cache/impeccable/impeccable/<version>/skills/impeccable/`),
+  **not** this project — Node resolves them from the script's own
+  location, not from this repo, so installing them here (an earlier
+  mistake, since corrected) had no effect. If the detector reports
+  "DEGRADED" after a plugin version upgrade, reinstall those four
+  packages in the new version's directory.
