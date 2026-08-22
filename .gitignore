@@ -7,3 +7,5 @@ dist-ssr
 
 # Impeccable's local detector cache — not a project artifact
 .impeccable/hook.cache.json
+.vercel
+.env*
