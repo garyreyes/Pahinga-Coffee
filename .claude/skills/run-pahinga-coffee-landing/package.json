@@ -1,0 +1,10 @@
+{
+  "name": "run-pahinga-coffee-landing-driver",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Agent tooling only — the Playwright driver for the run-pahinga-coffee-landing skill. Not part of the shipped app.",
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}
