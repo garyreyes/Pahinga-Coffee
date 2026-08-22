@@ -2,6 +2,7 @@ import { Nav } from './shared/components/Nav'
 import { Footer } from './shared/components/Footer'
 import { Hero } from './features/hero/components/Hero'
 import { MenuSection } from './features/menu/components/MenuSection'
+import { AboutSection } from './features/about/components/AboutSection'
 
 function PlaceholderSection({ id, label }: { id: string; label: string }) {
   return (
@@ -25,7 +26,9 @@ function App() {
         <section id="menu">
           <MenuSection />
         </section>
-        <PlaceholderSection id="about" label="About section — coming in sub-phase 1e" />
+        <section id="about">
+          <AboutSection />
+        </section>
         <PlaceholderSection id="location" label="Location section — coming in sub-phase 1f" />
         <PlaceholderSection id="contact" label="Contact section — coming in sub-phase 1g" />
       </main>
