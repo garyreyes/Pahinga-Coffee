@@ -15,6 +15,21 @@
   to a real campus, which is acceptable because the footer labels the
   page as a concept design. Don't revert this to a generic address.
 - Hours are a generic placeholder: open daily, 8:00am–10:00pm.
+- **Sections alternate light/dark grounds** (`.tone-light` / `.tone-dark`
+  in `src/index.css`). This is load-bearing, not decoration: the first
+  build put every section on one cream field and read as flat and empty
+  across 5 viewports, because the committed "dim reading room" direction
+  was never actually rendered. Components read `--tone-*` variables, so
+  don't reintroduce hardcoded colours in section components.
+- **Accent colour differs by tone for contrast reasons.** Plain brass
+  (`#b8863b`) on the cream ground is only 2.3:1 and fails AA — light
+  sections must use `--color-brass-deep` (#7a5219, 4.9:1) and dark
+  sections `--color-brass-glow` (#d9a752, 6.3:1). Don't "simplify" these
+  back to one brass.
+- Playwright `fullPage` screenshots do **not** composite the Google Maps
+  iframe — the map shows blank in them. It renders correctly in normal
+  viewport screenshots. Verify the map with a viewport capture, not a
+  full-page one, before concluding it's broken.
 - The Location map is pinned by **coordinates** (14.5648, 120.9932), not
   an address string. Two other approaches were tried and rejected: a
   plain address query makes Google label the pin with whatever building

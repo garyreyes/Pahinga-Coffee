@@ -1,18 +1,22 @@
 export function CaffeineLevel({ level }: { level: number }) {
   if (level === 0) {
-    return <span className="text-xs text-ink-muted">Caffeine-free</span>
+    return (
+      <span className="text-xs text-[var(--tone-body)]">Caffeine-free</span>
+    )
   }
 
   return (
     <span className="flex items-center gap-1.5">
-      <span className="text-xs text-ink-muted">Caffeine</span>
+      <span className="text-xs text-[var(--tone-body)]">Caffeine</span>
       <span className="flex gap-0.5" aria-hidden="true">
         {[1, 2, 3, 4, 5].map((step) => (
           <span
             key={step}
-            className={`h-1.5 w-1.5 rounded-full ${
-              step <= level ? 'bg-brass' : 'bg-walnut/20'
-            }`}
+            className={
+              step <= level
+                ? 'h-1.5 w-1.5 rounded-full bg-[var(--tone-accent)]'
+                : 'h-1.5 w-1.5 rounded-full bg-[var(--tone-rule)]'
+            }
           />
         ))}
       </span>

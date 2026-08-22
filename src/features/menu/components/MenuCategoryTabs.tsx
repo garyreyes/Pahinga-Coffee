@@ -19,11 +19,11 @@ export function MenuCategoryTabs({ categories, activeId, onSelect }: Props) {
             aria-selected={isActive}
             aria-controls={`panel-${category.id}`}
             onClick={() => onSelect(category.id)}
-            className={`border px-4 py-2 text-sm transition-colors ${
+            className={
               isActive
-                ? 'border-walnut bg-walnut text-paper'
-                : 'border-walnut/30 text-ink-muted hover:border-walnut/60 hover:text-ink'
-            }`}
+                ? 'border border-[var(--tone-heading)] bg-[var(--tone-heading)] px-4 py-2 text-sm text-[var(--tone-bg)] transition-colors'
+                : 'border border-[var(--tone-rule)] px-4 py-2 text-sm text-[var(--tone-body)] transition-colors hover:border-[var(--tone-field-border)] hover:text-[var(--tone-heading)]'
+            }
           >
             {category.name}
           </button>
