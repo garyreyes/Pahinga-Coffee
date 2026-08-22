@@ -41,7 +41,8 @@ sync as sub-phases complete.
       La Salle University), address text, hours, real "Get Directions"
       link opening Google Maps in a new tab.
 
-- [ ] **1g. Contact** — not started
+- [x] **1g. Contact** — done (pending a real Web3Forms key for the live
+      success path — see CHANGES.md)
       The form (name, email/phone, message — all required), Web3Forms
       submission wired in `features/contact/service.ts`, and all four
       states from `docs/user-flows.md`: inline validation errors,
