@@ -39,3 +39,11 @@
   details list (wifi, outlets, no table-time limit, quiet hours) aimed at
   the students and remote workers the café is for. Photo on the left,
   mirroring the Hero's photo-right layout so the scroll alternates.
+- 1f — Location: Google Maps embed (no API key needed), address, hours
+  (8:00am–10:00pm daily), and a working "Get Directions" link opening in
+  a new tab. Per an explicit owner decision, this uses De La Salle
+  University's real address rather than the previously-planned generic
+  one — see PROJECT_FACTS.md. The map is pinned by coordinates rather
+  than address text: an address query made Google label the pin with the
+  building it resolved to, and a name+address query made it run a search
+  and zoom out to the whole city.
