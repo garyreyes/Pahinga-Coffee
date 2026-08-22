@@ -61,3 +61,12 @@ direction (darker/more devotional register) and over re-rolling.
 - `DESIGN.md` does not exist yet by design — Impeccable writes it at
   finish, from the actually-built result, not from this pre-build
   intent. This section is the interim record until then.
+- Hero photo (`src/assets/hero-cafe.jpg`): "Bookshelves and decorations
+  in a cozy, wooden interior" by Resky Fernanda (@reskyfrnd), sourced
+  from Unsplash (unsplash.com/photos/BZnJ20sEeao), Unsplash License
+  (free for commercial use, no attribution required — credited in
+  `Hero.tsx` as a code comment anyway, as good practice). Chosen over
+  three other candidates for combining "café" clarity (visible espresso
+  machine) with the dark-wood/terracotta palette and book-lined "reading
+  room" feel, without reading as bright/trendy like the rejected
+  candidates.
