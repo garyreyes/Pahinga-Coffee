@@ -18,3 +18,9 @@
   scroll + active-state behavior in a real browser; fixed a bug where
   the nav defaulted to highlighting "Menu" before any section was
   actually in view.
+- 1c — Hero: name, tagline, "See the Menu" CTA, and a real sourced photo
+  (Resky Fernanda, Unsplash License) framed beside the text, side-by-side
+  on desktop and stacked on mobile. Also added the missing
+  `src/vite-env.d.ts` (asset-import type declarations — a gap from the
+  original hand-written scaffold). Verified CTA scroll + nav highlight
+  update in a real browser.

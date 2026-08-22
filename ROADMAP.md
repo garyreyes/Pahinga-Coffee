@@ -24,7 +24,7 @@ sync as sub-phases complete.
       non-functional social/channel badges + the demo-disclosure credit
       line).
 
-- [ ] **1c. Hero** — not started
+- [x] **1c. Hero** — done
       Pahinga Coffee name/logo, one-line vibe tagline, "See the Menu"
       CTA button scrolling to the Menu section.
 
