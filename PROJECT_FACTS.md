@@ -70,3 +70,17 @@ direction (darker/more devotional register) and over re-rolling.
   machine) with the dark-wood/terracotta palette and book-lined "reading
   room" feel, without reading as bright/trendy like the rejected
   candidates.
+- Menu item photos (`src/assets/menu/`): all sourced from Unsplash
+  (Unsplash License, free for commercial use). Starbucks-branded photos
+  were deliberately rejected during sourcing — real brand imagery inside
+  a fictional café's menu would be wrong. Unsplash+ (`plus.unsplash.com`)
+  results were also avoided, as those require a paid subscription.
+- Menu item details (price, description, variants, caffeine level) are
+  **always visible, never hover-only** — the Pickup Coffee reference used
+  hover, but hover doesn't exist on touchscreens and this page's primary
+  audience is on mobile.
+- Menu prices and caffeine levels (1–5) are authored demonstration data
+  for a fictional business — plausible Manila specialty-café pricing
+  (₱110–₱190), not real quoted prices.
+- "Add-Ons & Customizations" intentionally has no photos and renders as a
+  compact list — they're modifiers, not products.

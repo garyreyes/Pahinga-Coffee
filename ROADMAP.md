@@ -28,7 +28,7 @@ sync as sub-phases complete.
       Pahinga Coffee name/logo, one-line vibe tagline, "See the Menu"
       CTA button scrolling to the Menu section.
 
-- [ ] **1d. Menu** — not started
+- [x] **1d. Menu** — done
       Category tabs (Espresso & Coffee Classics active by default), all
       five categories' items from `docs/PRD.md`, tabs styled as
       catalog-card dividers per the chosen direction.

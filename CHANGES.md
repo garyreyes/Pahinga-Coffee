@@ -24,3 +24,14 @@
   `src/vite-env.d.ts` (asset-import type declarations — a gap from the
   original hand-written scaffold). Verified CTA scroll + nav highlight
   update in a real browser.
+- 1d — Menu: category tabs (Espresso & Coffee Classics active by
+  default), all 5 categories from `lib/content.ts`, per-item photo,
+  price, hot/iced variants, and a 1–5 caffeine indicator. 17 item photos
+  sourced from Unsplash and individually reviewed via a contact sheet;
+  3 initial picks were replaced for being wrong subjects. Add-Ons has no
+  photos by design (they're modifiers, not products) and renders as a
+  compact list instead. Item details are always visible rather than
+  hover-only, since the primary audience is on mobile where hover
+  doesn't exist. Also added a "Home" nav link (scrolls back to the hero)
+  and tightened nav spacing on small screens — five links overflowed
+  horizontally at 320px until the spacing was reduced.

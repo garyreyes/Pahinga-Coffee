@@ -1,6 +1,7 @@
 import { useActiveSection } from '../hooks/useActiveSection'
 
 const links = [
+  { id: 'hero', label: 'Home' },
   { id: 'menu', label: 'Menu' },
   { id: 'about', label: 'About' },
   { id: 'location', label: 'Location' },
@@ -16,7 +17,7 @@ export function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-walnut-light bg-paper">
-      <ul className="mx-auto flex max-w-3xl items-center justify-center gap-6 px-6 py-4 text-sm font-medium">
+      <ul className="mx-auto flex max-w-3xl items-center justify-center gap-3 px-3 py-4 text-sm font-medium sm:gap-6 sm:px-6">
         {links.map((link) => (
           <li key={link.id}>
             <button
