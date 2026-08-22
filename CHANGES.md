@@ -12,3 +12,9 @@
   in a real browser (desktop + mobile screenshots, no console errors).
   Also fixed the design-slop detector's dependency install location
   (belongs in the Impeccable plugin directory, not this project).
+- 1b — Shared chrome: sticky `Nav` with anchor links and scroll-spy
+  active-highlighting (`useActiveSection`), `Footer` with decorative
+  `SocialBadges` and the demo-disclosure credit line. Verified click +
+  scroll + active-state behavior in a real browser; fixed a bug where
+  the nav defaulted to highlighting "Menu" before any section was
+  actually in view.

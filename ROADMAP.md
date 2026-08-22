@@ -18,7 +18,7 @@ sync as sub-phases complete.
       character. Base layout shell. Everything after this inherits these
       tokens — nothing built before this step.
 
-- [ ] **1b. Shared chrome** — not started
+- [x] **1b. Shared chrome** — done
       Sticky `Nav` (anchor links to each section + scroll-spy active-item
       highlighting via `useActiveSection`) and `Footer` (decorative,
       non-functional social/channel badges + the demo-disclosure credit
