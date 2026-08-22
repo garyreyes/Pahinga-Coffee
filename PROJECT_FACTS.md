@@ -1,5 +1,18 @@
 # Project facts
 
+- **Status: complete and deployed** at https://pahinga-coffee.vercel.app.
+  The Vercel project (`pontoy/pahinga-coffee`) is connected to this
+  GitHub repo, so pushes to `main` deploy to production automatically and
+  every PR gets its own preview URL.
+- **This piece stays on the `.vercel.app` URL by decision.** The custom
+  domain belongs to the *portfolio site* that will collect this and the
+  owner's other projects — not to an individual spec piece. Don't
+  re-open the domain question for this repo.
+- The contact form is intentionally left without a live
+  `VITE_WEB3FORMS_KEY`: the owner confirmed they don't need real email
+  delivery for a concept piece. The form still validates and fails
+  closed visibly. Add the key any time to enable delivery — see README.
+
 - This repo ("landing-page-1") is one spec page inside a larger
   portfolio project, not the portfolio itself. Portfolio-level decisions
   (pricing model shown, hosting handoff terms after client delivery, the
