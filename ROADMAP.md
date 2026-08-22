@@ -33,7 +33,7 @@ sync as sub-phases complete.
       five categories' items from `docs/PRD.md`, tabs styled as
       catalog-card dividers per the chosen direction.
 
-- [ ] **1e. About / Vibe** — not started
+- [x] **1e. About / Vibe** — done
       The cozy/dim/woody/library-vibe story content.
 
 - [ ] **1f. Location** — not started

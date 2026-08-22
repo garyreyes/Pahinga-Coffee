@@ -35,3 +35,7 @@
   doesn't exist. Also added a "Home" nav link (scrolls back to the hero)
   and tightened nav spacing on small screens — five links overflowed
   horizontally at 320px until the spacing was reduced.
+- 1e — About / Vibe: the "Pahinga means rest" story, plus a concrete
+  details list (wifi, outlets, no table-time limit, quiet hours) aimed at
+  the students and remote workers the café is for. Photo on the left,
+  mirroring the Hero's photo-right layout so the scroll alternates.
