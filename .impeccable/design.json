@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-22T00:00:00.000Z",
+  "title": "Design System: Pahinga Coffee",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Aged Paper",
+        "canonical": "#e4d9c0",
+        "tonalRamp": ["#241d10", "#3d321d", "#57482c", "#72603c", "#8e7b52", "#ab9873", "#c8b79b", "#e4d9c0"]
+      },
+      "paper-card": {
+        "role": "neutral",
+        "displayName": "Library Slip",
+        "canonical": "#efe6d2",
+        "tonalRamp": ["#2a2213", "#443722", "#5f4e31", "#7b6842", "#98855b", "#b6a37e", "#d3c3a8", "#efe6d2"]
+      },
+      "paper-muted": {
+        "role": "neutral",
+        "displayName": "Faded Paper",
+        "canonical": "#c4b192",
+        "tonalRamp": ["#231a0e", "#3b2d1a", "#544226", "#6f5934", "#8b7248", "#a68d68", "#c4b192", "#e0d3ba"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#2b2018",
+        "tonalRamp": ["#150f0b", "#2b2018", "#413127", "#584437", "#71594a", "#8c7263", "#ab9384", "#cbb8ab"]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#5b4a3a",
+        "tonalRamp": ["#1a130d", "#2e231a", "#443428", "#5b4a3a", "#75604d", "#907963", "#ad957e", "#cbb5a0"]
+      },
+      "walnut": {
+        "role": "neutral",
+        "displayName": "Walnut",
+        "canonical": "#3b2a1e",
+        "tonalRamp": ["#180f09", "#2a1d13", "#3b2a1e", "#50392a", "#684b37", "#816046", "#9c7758", "#b8906e"]
+      },
+      "walnut-deep": {
+        "role": "neutral",
+        "displayName": "Deep Walnut",
+        "canonical": "#2a1d13",
+        "tonalRamp": ["#130c07", "#2a1d13", "#3e2c1d", "#543d28", "#6b5034", "#846442", "#9e7a53", "#b99168"]
+      },
+      "walnut-light": {
+        "role": "neutral",
+        "displayName": "Walnut Light",
+        "canonical": "#5c4430",
+        "tonalRamp": ["#1c1209", "#301f13", "#46301f", "#5c4430", "#755a42", "#8f7156", "#aa8a6e", "#c5a488"]
+      },
+      "brass": {
+        "role": "primary",
+        "displayName": "Lamp Brass",
+        "canonical": "#b8863b",
+        "tonalRamp": ["#2b1c07", "#452e0e", "#604216", "#7a5219", "#96692a", "#b8863b", "#d9a752", "#eccb92"]
+      },
+      "brass-deep": {
+        "role": "primary",
+        "displayName": "Deep Brass (light-ground accent, 4.9:1 on paper)",
+        "canonical": "#7a5219",
+        "tonalRamp": ["#241704", "#3a250a", "#513510", "#684315", "#7a5219", "#98692a", "#b8863b", "#d9a752"]
+      },
+      "brass-glow": {
+        "role": "primary",
+        "displayName": "Brass Glow (dark-ground accent, 6.3:1 on walnut)",
+        "canonical": "#d9a752",
+        "tonalRamp": ["#33230a", "#4d3611", "#684917", "#835d1f", "#a0762c", "#bd8f3d", "#d9a752", "#ecc98f"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The cafe name in the hero. Appears exactly once per page." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles. Centred on full-width sections, left-aligned beside a photo column." },
+      "title": { "displayName": "Title", "purpose": "Standalone short statements: the address block, the form's sent confirmation." },
+      "subtitle": { "displayName": "Subtitle", "purpose": "Menu item names — a product name as a heading in miniature." },
+      "body-lead": { "displayName": "Body Lead", "purpose": "The hero's single supporting line, capped at ~24rem measure." },
+      "body": { "displayName": "Body", "purpose": "Section prose, capped at ~28rem measure or by half-column width." },
+      "label": { "displayName": "Label", "purpose": "Form labels, list terms, prices, descriptions, buttons, nav links. The workhorse size." },
+      "micro": { "displayName": "Micro", "purpose": "Variant lists, caffeine reading, decorative footer badges." }
+    },
+    "toneSystem": {
+      "purpose": "Sections alternate light paper and dark walnut grounds; components read --tone-* variables so one component renders on either field.",
+      "light": {
+        "--tone-bg": "#e4d9c0",
+        "--tone-heading": "#3b2a1e",
+        "--tone-body": "#5b4a3a",
+        "--tone-accent": "#7a5219",
+        "--tone-rule": "rgb(59 42 30 / 0.2)",
+        "--tone-frame": "#3b2a1e",
+        "--tone-field-bg": "#efe6d2",
+        "--tone-field-border": "rgb(59 42 30 / 0.3)",
+        "--tone-hover-bg": "#3b2a1e",
+        "--tone-hover-fg": "#e4d9c0"
+      },
+      "dark": {
+        "--tone-bg": "#3b2a1e",
+        "--tone-heading": "#e4d9c0",
+        "--tone-body": "#c4b192",
+        "--tone-accent": "#d9a752",
+        "--tone-rule": "rgb(228 217 192 / 0.2)",
+        "--tone-frame": "#2a1d13",
+        "--tone-field-bg": "rgb(228 217 192 / 0.06)",
+        "--tone-field-border": "rgb(228 217 192 / 0.3)",
+        "--tone-hover-bg": "#e4d9c0",
+        "--tone-hover-fg": "#3b2a1e"
+      }
+    },
+    "shadows": [
+      {
+        "name": "framed-media",
+        "value": "0 18px 40px -24px rgb(43 29 19 / 0.7)",
+        "purpose": "The only shadow in the system. Sits under photo and map frames so they read as objects on the table. On dark grounds the same geometry is tinted near-black: 0 18px 40px -24px rgb(0 0 0 / 0.8)."
+      }
+    ],
+    "motion": [
+      { "name": "state-color", "value": "transition-property: color, background-color, border-color; duration ~150ms", "purpose": "Every interactive state change. Colour only — no lift, scale, or shadow." },
+      { "name": "photo-settle", "value": "transform 700ms cubic-bezier(0, 0, 0.2, 1); scale 1.05", "purpose": "Menu card photography on hover, clipped by its frame. The single non-instant motion in the system." },
+      { "name": "anchor-scroll", "value": "scrollIntoView({ behavior: 'smooth' })", "purpose": "Nav links and the hero CTA. No entrance animations exist anywhere." }
+    ],
+    "texture": [
+      {
+        "name": "grain-light",
+        "value": "SVG fractalNoise baseFrequency 0.85, 3 octaves, 140x140 tile; opacity 0.055; mix-blend-mode: multiply",
+        "purpose": "Overlay on every light ground so paper reads as material, not flat fill. Non-interactive."
+      },
+      {
+        "name": "grain-dark",
+        "value": "SVG fractalNoise baseFrequency 0.85, 3 octaves, 140x140 tile; opacity 0.07; mix-blend-mode: overlay",
+        "purpose": "Overlay on every dark ground so walnut reads as worn wood."
+      }
+    ],
+    "browserSurfaces": [
+      { "name": "selection", "value": "background #b8863b; color #2a1d13", "purpose": "Text selection is themed brass on deep walnut." },
+      { "name": "focus-ring", "value": "outline: 2px solid #b8863b; outline-offset: 2px", "purpose": "Global keyboard focus indicator." },
+      { "name": "scrollbar", "value": "scrollbar-color: #5c4430 #e4d9c0", "purpose": "Walnut thumb on a paper track." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ],
+    "containers": [
+      { "name": "section", "value": "64rem (max-w-5xl), 24px gutters" },
+      { "name": "narrow", "value": "36rem (max-w-xl) — contact section only" },
+      { "name": "nav", "value": "48rem (max-w-3xl)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The only button style in the system: an outlined pill that fully inverts on hover. Used for the hero CTA, Get Directions, and Send Message.",
+      "html": "<button class=\"ds-btn-primary\">See the Menu</button>",
+      "css": ".ds-btn-primary { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; color: #7a5219; background: transparent; border: 1px solid rgb(59 42 30 / 0.3); border-radius: 9999px; padding: 12px 28px; cursor: pointer; transition: color 150ms, background-color 150ms, border-color 150ms; } .ds-btn-primary:hover { background: #3b2a1e; color: #e4d9c0; } .ds-btn-primary:focus-visible { outline: 2px solid #b8863b; outline-offset: 2px; } .ds-btn-primary:disabled { opacity: 0.4; cursor: not-allowed; background: transparent; color: #7a5219; }"
+    },
+    {
+      "name": "Primary Button (dark ground)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The same button rendered on a walnut section — proof that one component works on either field via the tone variables.",
+      "html": "<div class=\"ds-btn-dark-field\"><button class=\"ds-btn-primary-dark\">Get Directions</button></div>",
+      "css": ".ds-btn-dark-field { background: #3b2a1e; padding: 24px; } .ds-btn-primary-dark { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; color: #d9a752; background: transparent; border: 1px solid rgb(228 217 192 / 0.3); border-radius: 9999px; padding: 12px 28px; cursor: pointer; transition: color 150ms, background-color 150ms; } .ds-btn-primary-dark:hover { background: #e4d9c0; color: #3b2a1e; } .ds-btn-primary-dark:focus-visible { outline: 2px solid #b8863b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Menu Category Tab",
+      "kind": "chip",
+      "refersTo": "tab-active",
+      "description": "Square catalog-divider tabs. The selected tab fully inverts to the heading colour; inactive tabs are hairline outlines. Deliberately not brass.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab ds-tab--active\">Espresso &amp; Coffee Classics</button><button class=\"ds-tab\">Signature Lattes</button><button class=\"ds-tab\">Tea &amp; Non-Coffee</button></div>",
+      "css": ".ds-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; background: #3b2a1e; padding: 24px; } .ds-tab { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; padding: 8px 16px; border-radius: 0; background: transparent; color: #c4b192; border: 1px solid rgb(228 217 192 / 0.2); cursor: pointer; transition: color 150ms, border-color 150ms, background-color 150ms; } .ds-tab:hover { border-color: rgb(228 217 192 / 0.3); color: #e4d9c0; } .ds-tab--active, .ds-tab--active:hover { background: #e4d9c0; color: #3b2a1e; border-color: #e4d9c0; } .ds-tab:focus-visible { outline: 2px solid #b8863b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Library-slip form field: square, hairline stroke over a lighter paper fill, label above. Focus shifts the border to the tone accent.",
+      "html": "<label class=\"ds-field-wrap\"><span class=\"ds-field-label\">Name</span><input class=\"ds-field\" type=\"text\" value=\"\" /></label>",
+      "css": ".ds-field-wrap { display: block; background: #e4d9c0; padding: 20px; } .ds-field-label { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; letter-spacing: 0.025em; color: #3b2a1e; } .ds-field { display: block; margin-top: 6px; width: 100%; box-sizing: border-box; font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; color: #3b2a1e; background: #efe6d2; border: 1px solid rgb(59 42 30 / 0.3); border-radius: 0; padding: 10px 12px; outline: none; transition: border-color 150ms; } .ds-field:focus { border-color: #7a5219; } .ds-field:disabled { opacity: 0.5; }"
+    },
+    {
+      "name": "Sticky Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Fixed page chrome, permanently on the paper ground: a centred row of five text links with a scroll-derived brass active state. No hamburger at any width.",
+      "html": "<nav class=\"ds-nav\"><ul class=\"ds-nav-list\"><li><button class=\"ds-nav-link ds-nav-link--active\">Home</button></li><li><button class=\"ds-nav-link\">Menu</button></li><li><button class=\"ds-nav-link\">About</button></li><li><button class=\"ds-nav-link\">Location</button></li><li><button class=\"ds-nav-link\">Contact</button></li></ul></nav>",
+      "css": ".ds-nav { background: rgb(228 217 192 / 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid #5c4430; } .ds-nav-list { display: flex; align-items: center; justify-content: center; gap: 24px; list-style: none; margin: 0; padding: 16px 24px; } .ds-nav-link { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; background: none; border: none; padding: 0; cursor: pointer; color: #5b4a3a; transition: color 150ms; } .ds-nav-link:hover { color: #2b2018; } .ds-nav-link--active, .ds-nav-link--active:hover { color: #7a5219; } .ds-nav-link:focus-visible { outline: 2px solid #b8863b; outline-offset: 2px; }"
+    },
+    {
+      "name": "Menu Item Card",
+      "kind": "card",
+      "refersTo": "media-frame",
+      "description": "Borderless card on the section ground: a thickly framed square photo, then name and price on one baseline, description, and the caffeine meter. Photo settles to 105% over 700ms on hover.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-frame\"><div class=\"ds-card-photo\"></div></div><div class=\"ds-card-text\"><div class=\"ds-card-row\"><h3 class=\"ds-card-name\">Sea Salt Spanish Latte</h3><span class=\"ds-card-price\">₱165</span></div><p class=\"ds-card-desc\">Condensed milk espresso under a salted cream cap.</p><div class=\"ds-card-meta\"><span class=\"ds-card-variants\">Hot · Iced</span><span class=\"ds-meter\"><span class=\"ds-meter-label\">Caffeine</span><span class=\"ds-meter-dots\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span></span></div></div></div>",
+      "css": ".ds-card { width: 260px; background: #3b2a1e; padding: 20px; font-family: Inter, system-ui, sans-serif; } .ds-card-frame { border: 4px solid #2a1d13; overflow: hidden; } .ds-card-photo { aspect-ratio: 1 / 1; width: 100%; background: linear-gradient(135deg, #5c4430, #2a1d13); transition: transform 700ms cubic-bezier(0, 0, 0.2, 1); } .ds-card:hover .ds-card-photo { transform: scale(1.05); } .ds-card-text { margin-top: 16px; } .ds-card-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; } .ds-card-name { font-family: Vollkorn, Georgia, serif; font-weight: 400; font-size: 1.125rem; color: #e4d9c0; margin: 0; } .ds-card-price { font-size: 0.875rem; color: #c4b192; flex-shrink: 0; } .ds-card-desc { font-size: 0.875rem; color: #c4b192; margin: 6px 0 0; } .ds-card-meta { margin-top: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; } .ds-card-variants { font-size: 0.75rem; letter-spacing: 0.025em; color: #c4b192; } .ds-meter { display: flex; align-items: center; gap: 6px; } .ds-meter-label { font-size: 0.75rem; color: #c4b192; } .ds-meter-dots { display: flex; gap: 2px; } .ds-meter-dots i { width: 6px; height: 6px; border-radius: 9999px; background: rgb(228 217 192 / 0.2); } .ds-meter-dots i.on { background: #d9a752; }"
+    },
+    {
+      "name": "Framed Media",
+      "kind": "custom",
+      "refersTo": "media-frame",
+      "description": "The signature mount: a solid 8px walnut frame with 4px interior padding, a fixed 4:5 ratio, and the system's single soft shadow. No image in the build is full-bleed or text-overlaid.",
+      "html": "<div class=\"ds-frame\"><div class=\"ds-frame-img\"></div></div>",
+      "css": ".ds-frame { border: 8px solid #3b2a1e; padding: 4px; width: 220px; box-shadow: 0 18px 40px -24px rgb(43 29 19 / 0.7); background: #e4d9c0; } .ds-frame-img { aspect-ratio: 4 / 5; width: 100%; background: linear-gradient(160deg, #5c4430, #2a1d13); }"
+    },
+    {
+      "name": "Definition Row",
+      "kind": "custom",
+      "refersTo": "input-field",
+      "description": "Hairline-ruled term/value rows used for hours and amenities — the system's low-chrome alternative to a table or a boxed list.",
+      "html": "<dl class=\"ds-dl\"><div class=\"ds-dl-row\"><dt>Wi-Fi</dt><dd>Free, and fast enough for calls</dd></div><div class=\"ds-dl-row\"><dt>Outlets</dt><dd>At every table, not just the wall seats</dd></div><div class=\"ds-dl-row\"><dt>Table time</dt><dd>No limit — the table is yours</dd></div></dl>",
+      "css": ".ds-dl { font-family: Inter, system-ui, sans-serif; background: #e4d9c0; padding: 20px; margin: 0; border-top: 1px solid rgb(59 42 30 / 0.2); } .ds-dl-row { display: flex; justify-content: space-between; gap: 24px; padding: 14px 0; border-bottom: 1px solid rgb(59 42 30 / 0.2); } .ds-dl-row dt { font-size: 0.875rem; letter-spacing: 0.025em; color: #3b2a1e; } .ds-dl-row dd { font-size: 0.875rem; text-align: right; color: #5b4a3a; margin: 0; }"
+    },
+    {
+      "name": "Form Success Panel",
+      "kind": "custom",
+      "refersTo": "input-field",
+      "description": "Replaces the form in place on a successful send: the same square field language scaled up, with a Vollkorn confirmation line.",
+      "html": "<div class=\"ds-success\" role=\"status\"><p class=\"ds-success-head\">Thank you — message sent.</p><p class=\"ds-success-sub\">We'll get back to you shortly.</p></div>",
+      "css": ".ds-success { border: 1px solid rgb(59 42 30 / 0.3); background: #efe6d2; padding: 48px 24px; text-align: center; } .ds-success-head { font-family: Vollkorn, Georgia, serif; font-weight: 400; font-size: 1.5rem; color: #3b2a1e; margin: 0; } .ds-success-sub { font-family: Inter, system-ui, sans-serif; font-size: 0.875rem; color: #5b4a3a; margin: 8px 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The University Reading Room",
+    "overview": "The world is an old university library's reading room after the afternoon has gone quiet: worn walnut tables, aged paper, a single brass banker's lamp, and no urgency anywhere. The page is built to feel like a room you sit down in rather than a storefront that sells at you. Density is generous and unhurried — sections breathe at 96–128px of vertical air, copy stays in short measured columns, and nothing blinks, badges, or shouts.\n\nThe most load-bearing decision in the built system is that the page has two grounds, not one. Sections alternate a light paper field and a dark walnut field, and every component inside main reads --tone-* variables instead of naming a colour. One card, one button, one rule line renders correctly on either field. This exists because the first build put everything on a single cream ground and read as flat and empty across every viewport — the alternation is structure, not decoration, and it is what makes the \"dim room\" actually dim.\n\nThe aesthetic is fixed. It does not respond to prefers-color-scheme; a reading room is the temperature it is. Two clusters are explicitly rejected: the generic AI-landing-page look (cream ground, italic display serif, terracotta accent) and the bright, high-saturation, aggressively-zoomed product-photo style of commercial chain cafés. Green and any high-saturation hue are out of the palette entirely.",
+    "keyCharacteristics": [
+      "Two alternating grounds — paper light, walnut dark — driven by a tone-variable layer",
+      "One accent (brass), reserved for active and focused states only",
+      "Serif display (Vollkorn, regular weight, tight tracking) over sans body (Inter)",
+      "Square corners everywhere except pill buttons and status dots",
+      "A visible grain overlay on every ground, so colour fields read as material",
+      "Flat by default; the only shadow in the system sits under framed photography"
+    ],
+    "rules": [
+      { "name": "The Two Grounds Rule", "body": "Sections alternate tone-light and tone-dark down the page — never two of the same tone in sequence. Components inside main read --tone-bg, --tone-heading, --tone-body, --tone-accent, --tone-rule, --tone-frame, --tone-field-bg, --tone-field-border, --tone-hover-bg, --tone-hover-fg. A hardcoded colour inside a section component is a bug.", "section": "colors" },
+      { "name": "The Contrast-Bound Accent Rule", "body": "The accent is tone-dependent for legibility, not for effect. Plain brass on the paper ground measures 2.3:1 and fails AA; light sections therefore use brass-deep and dark sections brass-glow. Do not collapse these back into one brass value. Plain brass is permitted only on the browser surfaces where it sits against walnut-deep (selection) or acts as a ring rather than text (focus outline).", "section": "colors" },
+      { "name": "The One Lamp Rule", "body": "Brass marks state — active, selected, focused, filled — and nothing else. If an element is neither active nor focused, it is wood, paper, or ink. No green; no high-saturation hue of any kind enters the palette.", "section": "colors" },
+      { "name": "The Fixed Room Rule", "body": "The aesthetic does not adapt to system light/dark preference. There is no prefers-color-scheme branch and none should be added; the tone system already carries both temperatures deliberately.", "section": "colors" },
+      { "name": "The Serif-For-Nouns Rule", "body": "Vollkorn is for names of things — the café, the sections, the drinks, the address. Everything a reader scans or acts on (labels, prices, descriptions, buttons, nav) is Inter. Never set body prose in the display face.", "section": "typography" },
+      { "name": "The Regular-Weight Rule", "body": "Display type earns emphasis from size and tracking, never from weight. Vollkorn is used at 400 throughout; bold and italic display settings are loaded by the font link but unused, and should stay that way.", "section": "typography" },
+      { "name": "The No Shouting Rule", "body": "There is no uppercase type anywhere in the system, and no tracked-out eyebrow or kicker above any heading. Sections open directly on their headline. Letter-spacing above zero appears only at 0.025em on labels and micro text, to keep small sans readable — never as a decorative device.", "section": "typography" },
+      { "name": "The Flat-Except-Frames Rule", "body": "Nothing is elevated except framed media. Interactive elements respond by changing colour, never by lifting, glowing, or gaining a shadow. There are no hard offset shadows anywhere in this world and none should be introduced.", "section": "elevation" },
+      { "name": "The Grain Rule", "body": "Every ground carries the grain overlay via tone-light / tone-dark. A new full-bleed surface joins the tone system rather than setting its own background colour, or it will read as a flat patch against a textured page.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do wrap any new full-width section in tone-light or tone-dark and alternate it against its neighbour, so the page keeps its light/dark rhythm and inherits the grain overlay.",
+      "Do read colours from the --tone-* variables inside section components; a new component should render correctly on either ground without a conditional.",
+      "Do keep the accent tone-dependent — brass-deep (4.9:1) on paper, brass-glow (6.3:1) on walnut.",
+      "Do reserve brass for active, selected, focused, and filled states only.",
+      "Do set names of things in Vollkorn at weight 400 with -0.02em tracking, and everything scannable or clickable in Inter.",
+      "Do pad new sections 96px vertically, 128px at md, inside the 64rem container with 24px gutters.",
+      "Do mount imagery in the solid --tone-frame border with its fixed aspect ratio and the single Framed Media shadow.",
+      "Do design the empty, sending, error, and success states of any new interaction in the existing palette — no new colour is needed for failure.",
+      "Do keep corners square, reserving pills for buttons and circles for status dots."
+    ],
+    "donts": [
+      "Don't hardcode a hex or Tailwind colour class inside a section component; that breaks tone portability. (Nav and footer are the deliberate, already-recorded exception.)",
+      "Don't collapse brass-deep and brass-glow into a single brass, and don't put plain brass (#b8863b) on the paper ground as text — it measures 2.3:1 and fails AA.",
+      "Don't add a prefers-color-scheme branch; the aesthetic is fixed by design.",
+      "Don't introduce green or any high-saturation hue, including a red error colour.",
+      "Don't add shadows to buttons, cards, tabs, or fields, and don't add hard offset shadows anywhere — the Framed Media shadow is the entire vocabulary.",
+      "Don't add an uppercase tracked kicker, eyebrow, or category label above a heading; sections open on their headline.",
+      "Don't use italic or bold Vollkorn for display type, and don't reach for a second accent when a hierarchy feels weak — increase size or space instead.",
+      "Don't hide menu item details (price, description, variants, caffeine) behind hover; the primary audience is on touchscreens where hover does not exist.",
+      "Don't use entrance animations or motion that delays reading. Transitions are colour-only at ~150ms; the 700ms photo scale on hover is the single deliberate exception and it is not a load effect.",
+      "Don't add a second button variant. If a second action is needed on a screen, demote it to a text link — the UX floor allows one obvious primary action per screen."
+    ]
+  }
+}
