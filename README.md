@@ -3,6 +3,11 @@
 A single static landing page for a fictional Manila café, built as
 portfolio work. Vite + React + TypeScript + Tailwind, no backend.
 
+**Live:** https://pahinga-coffee.vercel.app
+
+Pushes to `main` deploy to production automatically; every PR gets a
+preview URL.
+
 See [ARCHITECTURE.md](ARCHITECTURE.md) for structure, [ROADMAP.md](ROADMAP.md)
 for build progress, and [CLAUDE.md](CLAUDE.md) for project rules.
 

@@ -1,5 +1,8 @@
 # Roadmap — Pahinga Coffee spec landing page
 
+> **All phases complete.** Shipped to https://pahinga-coffee.vercel.app
+> on 2026-08-22. `DESIGN.md` records the system as built.
+
 One phase, sequenced from `docs/user-flows.md`'s section order and the
 folder structure in `ARCHITECTURE.md`. Visual direction (University
 Reading Room — see `PROJECT_FACTS.md`) is locked, so design tokens land
