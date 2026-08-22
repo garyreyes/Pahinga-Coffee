@@ -47,3 +47,14 @@
   than address text: an address query made Google label the pin with the
   building it resolved to, and a name+address query made it run a search
   and zoom out to the whole city.
+- 1g — Contact: the page's one real working mechanism. Web3Forms
+  submission isolated in `features/contact/service.ts` (the only outbound
+  call in the app), with all four states from `docs/user-flows.md` —
+  validation (submit disabled until complete), sending (button disabled
+  and relabelled, so no double-submit), success (confirmation replaces
+  the form), and failure (inline error, every typed value preserved).
+  Fails closed: a network error shows a real error, never a fake success.
+  A honeypot field is included for spam protection. All 15 state
+  assertions verified in a real browser with intercepted responses.
+  **Still needs a real `VITE_WEB3FORMS_KEY` in `.env.local` before the
+  live success path works** — see README/`.env.local.example`.
