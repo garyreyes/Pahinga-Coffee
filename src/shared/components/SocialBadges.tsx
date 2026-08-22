@@ -6,7 +6,7 @@ export function SocialBadges() {
       {channels.map((channel) => (
         <li
           key={channel}
-          className="rounded-full border border-paper/30 px-4 py-1.5 text-xs tracking-wide text-paper/80"
+          className="rounded-full border border-paper/25 px-4 py-1.5 text-xs tracking-wide text-paper-muted"
         >
           {channel}
         </li>

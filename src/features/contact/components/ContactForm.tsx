@@ -4,7 +4,9 @@ import { submitContactForm } from '../service'
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
 const fieldClass =
-  'mt-1.5 w-full border border-walnut/30 bg-paper-card px-3 py-2 text-sm text-ink outline-none transition-colors focus:border-brass'
+  'mt-1.5 w-full border border-[var(--tone-field-border)] bg-[var(--tone-field-bg)] px-3 py-2.5 text-sm text-[var(--tone-heading)] outline-none transition-colors focus:border-[var(--tone-accent)]'
+
+const labelClass = 'text-sm tracking-wide text-[var(--tone-heading)]'
 
 export function ContactForm() {
   const [name, setName] = useState('')
@@ -44,10 +46,12 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="border border-walnut/30 bg-paper-card px-6 py-10 text-center"
+        className="border border-[var(--tone-field-border)] bg-[var(--tone-field-bg)] px-6 py-12 text-center"
       >
-        <p className="font-display text-xl text-walnut">Thank you — message sent.</p>
-        <p className="mt-2 text-sm text-ink-muted">
+        <p className="font-display text-2xl text-[var(--tone-heading)]">
+          Thank you — message sent.
+        </p>
+        <p className="mt-2 text-sm text-[var(--tone-body)]">
           We'll get back to you shortly.
         </p>
       </div>
@@ -57,7 +61,7 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} noValidate>
       <label className="block">
-        <span className="text-sm tracking-wide text-walnut">Name</span>
+        <span className={labelClass}>Name</span>
         <input
           type="text"
           value={name}
@@ -69,7 +73,7 @@ export function ContactForm() {
       </label>
 
       <label className="mt-5 block">
-        <span className="text-sm tracking-wide text-walnut">Email</span>
+        <span className={labelClass}>Email</span>
         <input
           type="email"
           value={email}
@@ -81,7 +85,7 @@ export function ContactForm() {
       </label>
 
       <label className="mt-5 block">
-        <span className="text-sm tracking-wide text-walnut">Message</span>
+        <span className={labelClass}>Message</span>
         <textarea
           value={message}
           onChange={(event) => setMessage(event.target.value)}
@@ -105,7 +109,10 @@ export function ContactForm() {
       />
 
       {status === 'error' && (
-        <p role="alert" className="mt-5 border-l-2 border-brass pl-3 text-sm text-ink">
+        <p
+          role="alert"
+          className="mt-5 border-l border-[var(--tone-accent)] pl-3 text-sm text-[var(--tone-heading)]"
+        >
           {errorMessage}
         </p>
       )}
@@ -113,7 +120,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={!isComplete || isSending}
-        className="mt-7 rounded-full border border-walnut-light px-6 py-2.5 text-sm font-medium text-brass transition-colors hover:bg-walnut hover:text-paper disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-brass"
+        className="mt-8 rounded-full border border-[var(--tone-field-border)] px-7 py-3 text-sm font-medium text-[var(--tone-accent)] transition-colors hover:bg-[var(--tone-hover-bg)] hover:text-[var(--tone-hover-fg)] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-[var(--tone-accent)]"
       >
         {isSending ? 'Sending…' : 'Send Message'}
       </button>

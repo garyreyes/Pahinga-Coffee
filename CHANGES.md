@@ -58,3 +58,27 @@
   assertions verified in a real browser with intercepted responses.
   **Still needs a real `VITE_WEB3FORMS_KEY` in `.env.local` before the
   live success path works** — see README/`.env.local.example`.
+- 1h — Whole-page finish pass. The page read as flat and empty because
+  the committed "dim reading room" direction was never actually
+  rendered: every section sat on one cream field for 5 viewports, with
+  walnut used only for borders and the footer.
+  - **Tone system**: sections now alternate light paper / dark walnut
+    (`.tone-light` / `.tone-dark` in `index.css`). Components read
+    `--tone-*` variables instead of hardcoded colours, so each renders
+    correctly on either field. The dark Menu section is the page's
+    dominant tonal event and makes the food photography carry.
+  - **Fixed a real contrast bug**: brass on the cream ground was 2.3:1,
+    failing AA on every button and the active nav link. Light sections
+    now use a deeper brass (4.9:1); dark sections use the brighter glow
+    (6.3:1). All sampled text verified passing AA at both viewports.
+  - **Material**: a low-opacity grain overlay on both grounds, since
+    the direction called for aged paper and worn wood rather than flat
+    colour.
+  - **Dead space**: Contact moved from a 50/50 split (which left a dead
+    half-width column) to a narrow centred column; Location's map now
+    takes 3/5 and both columns centre vertically.
+  - **Menu grid** switched from CSS grid to centring flex-wrap, so a
+    category that doesn't fill its last row centres the remainder
+    instead of stranding one card with a two-thirds-empty gap.
+  - Browser surfaces themed from the palette (selection, focus ring,
+    scrollbar) rather than left as browser defaults.

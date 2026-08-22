@@ -50,7 +50,7 @@ sync as sub-phases complete.
       replacing the form, inline failure message with typed values
       preserved.
 
-- [ ] **1h. Whole-page finish pass** — not started
+- [x] **1h. Whole-page finish pass** — done
       `/impeccable critique` + `/impeccable polish` across the completed
       page (judged together for visual consistency, not section by
       section). Responsive check across mobile and desktop. Impeccable

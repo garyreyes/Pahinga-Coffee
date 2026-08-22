@@ -1,28 +1,37 @@
 import type { MenuItem } from '../../../lib/types'
 import { CaffeineLevel } from './CaffeineLevel'
 
-export function MenuItemCard({ item }: { item: MenuItem }) {
+type Props = {
+  item: MenuItem
+  className?: string
+}
+
+export function MenuItemCard({ item, className = '' }: Props) {
   return (
-    <li className="group">
+    <li className={`group ${className}`}>
       {item.image && (
-        <div className="overflow-hidden border-4 border-walnut/80">
+        <div className="overflow-hidden border-4 border-[var(--tone-frame)]">
           <img
             src={item.image}
             alt={item.name}
             loading="lazy"
-            className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
         </div>
       )}
-      <div className="mt-3">
+      <div className="mt-4">
         <div className="flex items-baseline justify-between gap-3">
-          <h3 className="font-display text-lg text-walnut">{item.name}</h3>
-          <span className="shrink-0 text-sm text-ink-muted">₱{item.price}</span>
+          <h3 className="font-display text-lg text-[var(--tone-heading)]">
+            {item.name}
+          </h3>
+          <span className="shrink-0 text-sm text-[var(--tone-body)]">
+            ₱{item.price}
+          </span>
         </div>
-        <p className="mt-1 text-sm text-ink-muted">{item.description}</p>
-        <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1">
+        <p className="mt-1.5 text-sm text-[var(--tone-body)]">{item.description}</p>
+        <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1">
           {item.variants && (
-            <span className="text-xs tracking-wide text-ink-muted">
+            <span className="text-xs tracking-wide text-[var(--tone-body)]">
               {item.variants.join(' · ')}
             </span>
           )}

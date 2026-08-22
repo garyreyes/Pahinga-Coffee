@@ -16,7 +16,7 @@ export function Nav() {
   const activeId = useActiveSection(links.map((link) => link.id))
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-walnut-light bg-paper">
+    <nav className="sticky top-0 z-50 border-b border-walnut-light bg-paper/95 backdrop-blur-sm">
       <ul className="mx-auto flex max-w-3xl items-center justify-center gap-3 px-3 py-4 text-sm font-medium sm:gap-6 sm:px-6">
         {links.map((link) => (
           <li key={link.id}>
@@ -25,7 +25,7 @@ export function Nav() {
               onClick={() => scrollToSection(link.id)}
               className={
                 activeId === link.id
-                  ? 'text-brass'
+                  ? 'text-brass-deep'
                   : 'text-ink-muted transition-colors hover:text-ink'
               }
             >
