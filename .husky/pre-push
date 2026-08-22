@@ -1,0 +1,9 @@
+npm run build || exit 1
+
+IMPECCABLE_BASE=$(ls -d "$HOME"/.claude/plugins/cache/impeccable/impeccable/*/skills/impeccable 2>/dev/null | sort -V | tail -n1)
+if [ -n "$IMPECCABLE_BASE" ]; then
+  echo "Running design-slop detector (warn-only) against src/..."
+  node "$IMPECCABLE_BASE/scripts/detect.mjs" --json src/ || true
+else
+  echo "impeccable detector not found locally, skipping design check"
+fi
