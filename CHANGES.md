@@ -89,3 +89,12 @@
   photos to favour light backgrounds. Three keep darker backgrounds on
   purpose, since their subjects are bright and a uniformly white-backed
   set would read as a sterile product catalogue.
+- Uniform drink photography + explicit temperature labelling. All 12
+  drink photos now follow one house style — served iced in a clear glass
+  on a table, soft warm café background — set from the two shots the
+  owner picked as reference. Nine were re-sourced to match.
+  Separately, `variants?: string[]` became `serve` (`hot-or-iced` /
+  `iced-only` / `hot-only`), rendered as "Hot or iced" / "Iced only".
+  The old field was optional, so an iced-only drink displayed *nothing*
+  and read as unlabelled rather than as iced-only; every drink now states
+  its temperature.

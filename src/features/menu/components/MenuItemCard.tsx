@@ -1,6 +1,12 @@
 import type { MenuItem } from '../../../lib/types'
 import { CaffeineLevel } from './CaffeineLevel'
 
+const SERVE_LABEL: Record<NonNullable<MenuItem['serve']>, string> = {
+  'hot-or-iced': 'Hot or iced',
+  'iced-only': 'Iced only',
+  'hot-only': 'Hot only',
+}
+
 type Props = {
   item: MenuItem
   className?: string
@@ -35,9 +41,9 @@ export function MenuItemCard({ item, className = '' }: Props) {
         </div>
         <p className="mt-1.5 text-sm text-[var(--tone-body)]">{item.description}</p>
         <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1">
-          {item.variants && (
+          {item.serve && (
             <span className="text-xs tracking-wide text-[var(--tone-body)]">
-              {item.variants.join(' · ')}
+              {SERVE_LABEL[item.serve]}
             </span>
           )}
           {item.caffeine !== undefined && <CaffeineLevel level={item.caffeine} />}
