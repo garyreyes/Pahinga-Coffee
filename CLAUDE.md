@@ -21,7 +21,13 @@ Manila small businesses. See `docs/PRD.md`, `PRODUCT.md`, and
 - One landing page, single-page anchor-nav + scroll — not a multi-page site.
 - No React Native / installable app. Responsive web only.
 - Pahinga Coffee is fictional. Never imply it's a real business, never
-  use a real occupied address, never fabricate real testimonials/reviews.
+  fabricate real testimonials/reviews.
+- **Address exception (deliberate, decided by the owner):** the Location
+  section uses De La Salle University's real address (2401 Taft Avenue,
+  Malate, Manila) for the map embed and "Get Directions" link. This
+  overrides the earlier "no real occupied address" rule — it's a personal
+  nod to the owner's alma mater in a clearly-labelled concept page. Don't
+  "fix" this back to a generic address; it's intentional.
 - Imagery is stock photography only (Unsplash/Pexels licensed) — no
   scraped/unlicensed images, no claiming AI-generated images are real photos.
 - Social/channel badges (Messenger, IG, Grab-style) are decorative only,

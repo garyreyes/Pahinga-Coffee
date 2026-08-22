@@ -7,11 +7,21 @@
 - Pahinga Coffee is entirely fictional — no real business, no real
   Facebook/Instagram/Messenger presence. Decorative social badges are
   intentionally non-functional, not a bug.
-- Location is a deliberately generic placeholder: **Taft Avenue, Manila**
-  area (near De La Salle University — the user's own alma mater; a
-  personal touch, not literal DLSU affiliation). No specific real
-  address/building — same rule as before, just a different neighborhood
-  than the earlier Katipunan placeholder.
+- Location uses **De La Salle University's real address — 2401 Taft
+  Avenue, Malate, Manila** — for the map embed and "Get Directions" link.
+  This was a deliberate owner decision (personal nod to their alma mater)
+  that **replaced** the earlier "generic area, invented street number"
+  rule. The tradeoff was raised explicitly and accepted: the pin resolves
+  to a real campus, which is acceptable because the footer labels the
+  page as a concept design. Don't revert this to a generic address.
+- Hours are a generic placeholder: open daily, 8:00am–10:00pm.
+- The Location map is pinned by **coordinates** (14.5648, 120.9932), not
+  an address string. Two other approaches were tried and rejected: a
+  plain address query makes Google label the pin with whatever building
+  it resolves to ("Gokongwei Hall"), and a "Pahinga Coffee, <address>"
+  query makes Google run a *search* and zoom out to all of Metro Manila
+  with unrelated coffee-shop pins. The "Get Directions" link still uses
+  the address string, which is correct there.
 - Imagery: stock photography only (Unsplash/Pexels), decided over
   AI-generated images.
 - Contact form: Web3Forms chosen over Formspree specifically because it

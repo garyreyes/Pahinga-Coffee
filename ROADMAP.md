@@ -36,7 +36,7 @@ sync as sub-phases complete.
 - [x] **1e. About / Vibe** — done
       The cozy/dim/woody/library-vibe story content.
 
-- [ ] **1f. Location** — not started
+- [x] **1f. Location** — done
       Google Maps iframe embed (generic Taft Avenue, Manila pin, near De
       La Salle University), address text, hours, real "Get Directions"
       link opening Google Maps in a new tab.

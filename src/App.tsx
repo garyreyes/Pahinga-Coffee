@@ -3,6 +3,7 @@ import { Footer } from './shared/components/Footer'
 import { Hero } from './features/hero/components/Hero'
 import { MenuSection } from './features/menu/components/MenuSection'
 import { AboutSection } from './features/about/components/AboutSection'
+import { LocationSection } from './features/location/components/LocationSection'
 
 function PlaceholderSection({ id, label }: { id: string; label: string }) {
   return (
@@ -29,7 +30,9 @@ function App() {
         <section id="about">
           <AboutSection />
         </section>
-        <PlaceholderSection id="location" label="Location section — coming in sub-phase 1f" />
+        <section id="location">
+          <LocationSection />
+        </section>
         <PlaceholderSection id="contact" label="Contact section — coming in sub-phase 1g" />
       </main>
       <Footer />
