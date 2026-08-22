@@ -122,3 +122,30 @@ direction (darker/more devotional register) and over re-rolling.
   (₱110–₱190), not real quoted prices.
 - "Add-Ons & Customizations" intentionally has no photos and renders as a
   compact list — they're modifiers, not products.
+- **Menu photos sit on a cream mat inside their frame** (`bg-paper-card`
+  padding inside the border, like a matted print). This is load-bearing:
+  the Menu section's ground is dark walnut, and photos with dark or brown
+  backgrounds of their own dissolved straight into it. Don't remove the
+  mat — it's what guarantees every photo has an edge regardless of its
+  own background.
+- **All 12 drink photos follow one house style: the drink served iced in
+  a clear glass, on a table, with a soft warm café background.** Set by
+  the owner picking the Caramel Macchiato and Buttercreme Latte shots as
+  the reference. Every drink on the menu is available iced, so showing
+  the iced version throughout is accurate as well as uniform. New drink
+  photos must match this style — don't mix in mugs, flat-lays, or
+  white-cyclorama product shots.
+- Pastry photos deliberately do *not* follow the drink style — they're
+  food, shot on plates/boards, and live in their own tab.
+- **Every drink states its temperature explicitly** via `serve`
+  (`hot-or-iced` / `iced-only` / `hot-only`), rendered as "Hot or iced" /
+  "Iced only". This replaced an optional `variants` array where an
+  iced-only drink showed *nothing*, which read as "unlabelled" rather
+  than "iced only". Don't make this field optional again for drinks.
+- Menu photos were re-sourced to favour **light backgrounds** for the
+  same reason. Three keep darker backgrounds on purpose (café latte,
+  basque cheesecake, iced sea salt matcha) because their subjects are
+  bright with strong internal contrast. Making all 17 pure-white was
+  rejected deliberately — a uniform white-background set reads as a
+  sterile product catalogue, which is the Pickup Coffee look this page
+  positions against.
